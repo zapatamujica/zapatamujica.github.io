@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bio</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 1em;
+      color: #222;
+    }
+    a {
+      color: #004080;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p {
+      text-align: justify;
+      margin-bottom: 1.5em;
+    }
+</style>
+<script>
+  function showTab(tabName) {
+    document.querySelectorAll('.tab-content').forEach(function(content) {
+      content.classList.remove('active');
+    });
+    document.getElementById(tabName).classList.add('active');
+    document.querySelectorAll('.tab').forEach(function(tab) {
+      tab.classList.remove('active');
+    });
+    document.getElementById(tabName + '-tab').classList.add('active');
+  }
+  window.onload = function() {
+    showTab('bio');
+  };
+</script>
+<style>
+  .tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 2em;
+  }
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1em;
+    color: #004080;
+    outline: none;
+    transition: background 0.2s;
+  }
+  .tab.active {
+    border-bottom: 2px solid #004080;
+    font-weight: bold;
+    color: #222;
+    background-color: #f0f8ff;
+  }
+  .tab-content {
+    display: none;
+  }
+  .tab-content.active {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <h1>Juan Sebastián Zapata-Mujica</h1>
+  <div class="tabs">
+    <button class="tab" id="bio-tab" onclick="showTab('bio')">Bio</button>
+    <button class="tab" id="publicaciones-tab" onclick="showTab('publicaciones')">Publicaciones</button>
+    <button class="tab" id="traducciones-tab" onclick="showTab('traducciones')">Traducciones académicas</button>
+  </div>
+  <div id="bio" class="tab-content">
+    <div style="display:flex; align-items:flex-start; margin-bottom:1.5em;">
+      <div style="flex:0 0 180px; text-align:left;">
+        <img src="imagenes/profile big.jpg" alt="Foto de Juan Sebastián Zapata-Mujica" style="max-width:180px; width:100%; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+        <div style="margin-top:1em; font-size:0.98em; color:#444;">
+          <div style="margin-bottom:0.4em;"><span style="font-size:1.1em; vertical-align:middle; color:#d32f2f;">&#128205;</span> São Paulo</div>
+          <div><span style="font-size:1.1em; vertical-align:middle; color:#004080;">&#9993;</span> <a href="mailto:zapatamujica@usp.br" style="color:#004080;">zapatamujica@usp.br</a></div>
+        </div>
+      </div>
+      <div style="flex:1; margin-left:2em;">
+        <p>Candidato a doctor del Laboratorio de Epistemología Genética del departamento de psicología social de la Universidad de São Paulo – USP, bajo coorientación de la profesora <a href="https://www.ip.usp.br/site/zelia-ramozzi-chiarottino-2/" target="_blank">Zélia Ramozzi-Chiarottino</a> y el profesor <a href="https://www.eva.mpg.de/ecology/staff/adam-boyette/" target="_blank">Adam H. Boyette</a>. Allí investigo el desarrollo histórico de las estructuras cognitivas a partir del caso de los indígenas de la Sierra Nevada de Santa Marta, reconstruyendo el camino que llevó a los antiguos pobladores prehispánicos de las costas septentrionales de la Sierra a convertirse en los actuales indígenas kogi (también conocidos como kággaba) e ikʉ (también conocidos como arhuacos.</p>
+
+        <p>Entré en contacto con los indígenas ikʉ en 2015, cuando hacía el trabajo de grado de sociología, cursada en la Pontificia Universidad Javeriana bajo dirección del profesor <a href="https://javeriana.academia.edu/Efr%C3%A9nPi%C3%B1aRivera" target="_blank">Efrén Piña Rivera</a>, durante mi primera estancia de trabajo de campo en la Sierra. En 2018 decidí dedicarme al estudio de la sociedad ikʉ mediante la maestría en antropología, en la Universidad Nacional de Colombia bajo orientación del profesor <a href="https://historia.uniandes.edu.co/paramo-carlos" target="_blank">Carlos Guillermo Páramo Bonilla</a>, donde abordé el problema de la organización y el cambio social desde el ángulo de la antropología económica, enmarcado en los enfoques teóricos proveídos por Maurice Godelier y Marshall Sahlins.</p>
+      </div>
+    </div>
+  </div>
+  <div id="publicaciones" class="tab-content">
+    <h3 style="margin-top:0;">Revistas científicas</h3>
+    <ul>
+      <li><strong>Zapata-Mujica, J.S.</strong> (2025). <a href="https://revistas.unal.edu.co/index.php/maguare/article/view/118071" target="_blank"><em>Fotos para visibilizar una misión laica femenina. USEMI, las misioneras de la liberación en la Sierra Nevada de Santa Marta</em></a>. <em>Maguaré</em>.</li>
+      <li><strong>Zapata-Mujica, J.S.</strong> (2024). <a href="https://erevistas.uca.edu.ar/index.php/RPSI/article/view/5039" target="_blank"><em>Desarrollo de la Völkerpsychologie como superación de la zona de tensión universalismo/particularismo</em></a>. <em>Revista de Psicología</em>.</li>
+      <li><strong>Zapata-Mujica, J.S.</strong> &amp; <strong>Ariza Salinas, L.C.</strong> (2021). <a href="https://revistaleca.org/index.php/leca/article/view/67" target="_blank"><em>Güía-Yina Tosi: Cacería de Hermanos Mayores</em></a>. <em>Revista latinoamericana de estudios críticos animales</em>.</li>
+      <li><strong>Zapata-Mujica, J.S.</strong> (2019). <a href="https://revistas.unal.edu.co/index.php/maguare/article/view/82994" target="_blank"><em>Jugando con ratas: observación participante desde la cloaca</em></a>. <em>Maguaré</em>.</li>
+    </ul>
+    <h3>Libros</h3>
+    <ul style="list-style-type:none; padding-left:0;">
+      <li><span style="color:black; font-size:1em; vertical-align:middle;">&#9733;</span> <strong>Zapata-Mujica, J.S.</strong> (2022). <a href="https://www.academia.edu/74335306/Cacicazgos_desvanecientes_Organizaci%C3%B3n_y_cambio_social_entre_los_ik%CA%89_de_la_zona_oriental_de_la_Sierra_Nevada_de_Santa_Marta" target="_blank"><em>Cacicazgos desvanecientes. Organización y cambio social entre los ikʉ de la zona oriental de la Sierra Nevada de Santa Marta</em></a>. Sororoca Livros.</li>
+    </ul>
+    <h3>Divulgación</h3>
+    <ul>
+      <!-- Agrega aquí publicaciones de divulgación -->
+    </ul>
+  </div>
+
+  <div id="traducciones" class="tab-content">
+    <ul>
+      <li><strong>Oesterdiekhoff, G.</strong> (2023, trad. del manuscrito original en inglés al español por Zapata-Mujica, J.S.). <a href="https://www.macrohistoria.com/index.php/mch/article/view/Oesterdiekhoff-teoria-genetico" target="_blank"><em>El programa de la teoría genético-estructural como teoría fundamental de la historia, las ciencias sociales y las humanidades</em></a>. <em>Macrohistoria</em>.</li>
+    </ul>
+  </div>
+</body>
+</html>
