@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bio</title>
+  <style>
+    body {font-family: Georgia, serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; background-color: #f9f9f9; color: #333;}
+    h1 {text-align: center; font-size: 2em; margin-bottom: 1em; color: #222;}
+    a {color: #004080; text-decoration: none;}
+    a:hover {text-decoration: underline;}
+    p {text-align: justify; margin-bottom: 1.5em;}
+    .tabs {display: flex; border-bottom: 2px solid #ccc; margin-bottom: 2em;}
+    .tab {padding: 10px 20px; cursor: pointer; border: none; background: none; font-size: 1em; color: #004080; outline: none; transition: background 0.2s;}
+    .tab.active {border-bottom: 2px solid #004080; font-weight: bold; color: #222; background-color: #f0f8ff;}
+    .tab-content {display: none;}
+    .tab-content.active {display: block;}
+  </style>
+  <script>
+    function showTab(tabName) {
+      document.querySelectorAll('.tab-content').forEach(function(content) {
+        content.classList.remove('active');
+      });
+      document.getElementById(tabName).classList.add('active');
+      document.querySelectorAll('.tab').forEach(function(tab) {
+        tab.classList.remove('active');
+      });
+      document.getElementById(tabName + '-tab').classList.add('active');
+    }
+    window.onload = function() {
+      showTab('home');
+    };
+  </script>
+</head>
+<body>
+  <div style="display:flex; justify-content:space-between; align-items:center;">
+    <h1 style="margin-bottom:0;">Juan Sebastián Zapata-Mujica</h1>
+    <div style="display:flex; gap:0.5em; align-items:center; position:relative; top:0; right:0;">
+      <a href="index.html" title="Español"><img src="assets/flags/colombia.svg" alt="Colombia" style="width:28px; height:20px; border-radius:2px; box-shadow:0 1px 3px rgba(0,0,0,0.08);"></a>
+      <a href="index-pt.html" title="Português"><img src="assets/flags/brazil.svg" alt="Brasil" style="width:28px; height:20px; border-radius:2px; box-shadow:0 1px 3px rgba(0,0,0,0.08);"></a>
+      <a href="index-en.html" title="English"><img src="assets/flags/uk.svg" alt="UK" style="width:28px; height:20px; border-radius:2px; box-shadow:0 1px 3px rgba(0,0,0,0.08);"></a>
+    </div>
+  </div>
+  <div class="tabs">
+    <button class="tab" id="home-tab" onclick="showTab('home')">Home</button>
+    <button class="tab" id="bio-tab" onclick="showTab('bio')">Bio</button>
+    <button class="tab" id="research-tab" onclick="showTab('research')">Research</button>
+    <button class="tab" id="photography-tab" onclick="showTab('photography')">Photography</button>
+    <button class="tab" id="media-tab" onclick="showTab('media')">Media</button>
+  </div>
+  <div id="home" class="tab-content">
+    <div style="text-align:center; margin-bottom:2em;">
+      <div style="font-size: 1.08em; color: #333; margin: 1.5em auto 1em auto; max-width: 500px;">Social researcher interested in the problem of the historical development of human thought. Photographer.</div>
+      <img src="imagenes/DSC_85972.JPG" alt="Fieldwork 2020, Yo'sagaka" style="max-width: 100%; width: 800px; margin: 0 auto; display: block; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.10);">
+      <div style="font-size: 0.85em; color: #555; margin-top: 0.5em; font-style: italic;">
+        Fieldwork 2020, Yo'sagaka, Duerungekʉn, Arhuaco Indigenous Reserve, Sierra Nevada de Santa Marta, Colombia.<br>
+        Photo: Santiago Dussan.
+      </div>
+    </div>
+  </div>
+  <!-- Additional tab contents (bio, research, photography, media) will be added in the next step -->
+  <div id="research" class="tab-content">
+    <h3 style="margin-top:0;">Scientific Journals</h3>
+    <ul>
+      <li><strong>Zapata-Mujica, J.S.</strong> (2025). <a href="https://revistas.unal.edu.co/index.php/maguare/article/view/118071" target="_blank"><em>Fotos para visibilizar una misión laica femenina. USEMI, las misioneras de la liberación en la Sierra Nevada de Santa Marta</em></a>. <em>Maguaré</em>.</li>
+      <li><strong>Zapata-Mujica, J.S.</strong> (2024). <a href="https://erevistas.uca.edu.ar/index.php/RPSI/article/view/5039" target="_blank"><em>Desarrollo de la Völkerpsychologie como superación de la zona de tensión universalismo/particularismo</em></a>. <em>Revista de Psicología</em>.</li>
+      <li><strong>Zapata-Mujica, J.S.</strong> &amp; <strong>Ariza Salinas, L.C.</strong> (2021). <a href="https://revistaleca.org/index.php/leca/article/view/67" target="_blank"><em>Güía-Yina Tosi: Cacería de Hermanos Mayores</em></a>. <em>Revista latinoamericana de estudios críticos animales</em>.</li>
+      <li><strong>Zapata-Mujica, J.S.</strong> (2019). <a href="https://revistas.unal.edu.co/index.php/maguare/article/view/82994" target="_blank"><em>Jugando con ratas: observación participante desde la cloaca</em></a>. <em>Maguaré</em>.</li>
+    </ul>
+
+    <h3>Books</h3>
+    <ul style="list-style-type:none; padding-left:0;">
+      <li><span style="color:black; font-size:1em; vertical-align:middle;">&#9733;</span> <strong>Zapata-Mujica, J.S.</strong> (2022). <a href="https://www.academia.edu/74335306/Cacicazgos_desvanecientes_Organizaci%C3%B3n_y_cambio_social_entre_los_ik%CA%89_de_la_zona_oriental_de_la_Sierra_Nevada_de_Santa_Marta" target="_blank"><em>Cacicazgos desvanecientes. Organización y cambio social entre los ikʉ de la zona oriental de la Sierra Nevada de Santa Marta</em></a>. Sororoca Livros.</li>
+    </ul>
+
+    <h3>Academic Translations</h3>
+    <ul>
+      <li><strong>Oesterdiekhoff, G.</strong> (2023, translated from the original English manuscript into Spanish by Zapata-Mujica, J.S.). <a href="https://www.macrohistoria.com/index.php/mch/article/view/Oesterdiekhoff-teoria-genetico" target="_blank"><em>El programa de la teoría genético-estructural como teoría fundamental de la historia, las ciencias sociales y las humanidades</em></a>. <em>Macrohistoria</em>.</li>
+    </ul>
+
+    <h3>Conferences</h3>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=TgtLilCa7zA&t=3837s" target="_blank"><em>Sobre o desenvolvimento histórico da psicogênese</em></a>. Seminar at the Grupo de Filosofia e Epistemologia Genética. Marília, Brazil (2025)</li>
+      <li><a href="https://www.academia.edu/123035879/Etnograf%C3%ADa_psicogen%C3%A9tica_Reconstrucci%C3%B3n_del_proceso_de_diferenciaci%C3%B3n_cognitiva_de_dos_sociedades_en_la_Sierra_Nevada_de_Santa_Marta" target="_blank"><em>Etnografía psicogenética. Reconstrucción del proceso de diferenciación cognitiva de dos sociedades en la Sierra Nevada de Santa Marta.</em></a>. Congress of the Latin American Association of Anthropology ALA. Rosario, Argentina (2024)</li>
+      <li><a href="https://www.youtube.com/watch?v=-FvAvE0K6qg&embeds_referring_euri=https%3A%2F%2Fwww.academia.edu%2F&embeds_referring_origin=http%3A%2F%2Facademia.edu" target="_blank"><em>Máscaras kogi de las danzas del Tani-cansamaría vistas desde los archivos etnográficos de USEMI</em></a>. Presentation on Thursday, June 6, 2024, at the HITAL International Colloquium, co-authored with Santiago Forero Bedoya. Medellín, Colombia (2024)</li>
+      <li><a href="https://www.youtube.com/watch?v=gNp89TF2U2Q&embeds_referring_euri=https%3A%2F%2Fwww.academia.edu%2F&embeds_referring_origin=http%3A%2F%2Facademia.edu" target="_blank"><em>Desarrollo histórico de los procesos cognitivos en SNSM. Paralelos entre psicogénesis y arqueología.</em></a>. XX International Symposium on Civilizing Processes, "Social Processes and Latin American Civilizations." Cochabamba, Bolivia (2024)</li>
+      <li><a href="https://www.youtube.com/watch?v=QXz0l6G-c2Q&embeds_referring_euri=https%3A%2F%2Fwww.academia.edu%2F&embeds_referring_origin=http%3A%2F%2Facademia.edu" target="_blank"><em>Diálogos visuales: Las Señoritas, antropología visual en acción. Sierra Nevada de Santa Marta.</em></a>. Conversation organized by the Alumni Chapter of Anthropology at the Universidad de los Andes, moderated by Yezid Campos. Bogotá, Colombia (2021)</li>
+      <li><a href="https://www.youtube.com/watch?v=q0s0ROwqdbQ" target="_blank"><em>Mentalidad primitiva, cosas concepto y ontologías radicales: antropología cognitiva através del caso kogi</em></a>. Invited as keynote speaker at the VII Philosophical Conference "Philosophy for Today: Problems and Challenges" School of Philosophy, Universidad Industrial de Santander. Bucaramanga, Colombia (2021)</li>
+      <li><a href="https://www.youtube.com/watch?v=yHps082hPHw&embeds_referring_euri=https%3A%2F%2Fwww.academia.edu%2F&embeds_referring_origin=http%3A%2F%2Facademia.edu" target="_blank"><em>De Aritama a Atánquez: comparación etnográfica tras seis décadas de "The People of Aritama" de Alicia Dussan de Reichel y Gerardo Reichel-Dolmatoff</em></a>. XXI Conference Cycle, Graduate Programs in Anthropology, Universidad Nacional de Colombia. Anthropological Perspectives and Social Research. Bogotá, Colombia (2020)</li>
+      <li><a href="https://www.youtube.com/watch?v=V6Dt7BuEV3g&embeds_referring_euri=https%3A%2F%2Fwww.academia.edu%2F&embeds_referring_origin=http%3A%2F%2Facademia.edu" target="_blank"><em>Comportamiento económico de los indígenas Kogi</em></a>. XVIII International Symposium on Civilizing Processes. Bogotá, Colombia (2020)</li>
+      <li><a href="https://www.youtube.com/watch?v=Uryq4yumtL8" target="_blank"><em>Cacicazgos desvanecientes. Organización y cambio social entre los iku (sustentación maestría )</em></a>. Jury: María del Rosario Ferro &amp; Diana Rosas Riaño. Bogotá, Colombia (2020)</li>
+    </ul>
+
+    <h3>Current Projects</h3>
+    <ul style="list-style-type:none; padding-left:0;">
+      <li>
+        <span style="font-size:1.1em; vertical-align:middle;">&#127909;</span> 
+        <a href="https://www.academia.edu/123251322/Dossier_documental_Las_Se%C3%B1oritas" target="_blank">Las Señoritas Documentary</a>
+        <div style="font-size:0.97em; color:#444; margin-top:0.4em;">
+          Since 2021, I have been working with Santiago Dussan, Daniel Velásquez, Daniela Rocha, Santiago Forero, Mamo Bernardo Torres, and the collaboration of many people on the production of this documentary. Currently (2025), we dedicate six hours a week to the post-production of the film. We have a first cut of the introduction, which, in its raw form, is about 35 minutes long. We are working on the second cut.<br><br>
+          You can find more information online with the hashtag <strong>#LasSeñoritasDocumental</strong>, and you can also watch this <a href="https://www.youtube.com/watch?v=R-GUZlFA-s0&t=22s" target="_blank">teaser on YouTube</a>, a <a href="https://www.youtube.com/watch?v=bYxCDBWEKTI&t=4s" target="_blank">behind the scenes of the first part of the shoot</a>. More information can also be found in the interviews and scientific journals sections.
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div id="photography" class="tab-content">
+    <p style="margin-top:1.5em; font-size:1.07em; color:#333;">Some of my photographs have been published by <strong>El Tiempo</strong>, <strong>Semanario Voz</strong>, and <strong>Cartel Urbano</strong>.</p>
+    <h3 style="margin-top:2em;">Essays</h3>
+    <ul style="list-style-type:none; padding-left:0;">
+      <li><span style="font-size:1.2em; vertical-align:middle;">&#128247;</span> <a href="https://www.filmshooterscollective.com/analog-film-photography-blog/action-research-film-photography-and-mirrors-of-time-for-indigenous-people-by-juansebastin-zapata-mujica-8-23" target="_blank"><em>Action Research, Film Photography and Mirrors of Time for Indigenous People</em></a> Film Shooters Collective (2018)</li>
+    </ul>
+    <h3 style="margin-top:2em;">Distinctions</h3>
+    <ul>
+      <li>First place in the national analog photography contest VI Encuentro de Fotografía Palmira (<a href="https://fb.watch/7ScECVCSiQ/" target="_blank">2021</a>)</li>
+      <li>Final selection 24th Documentary Photography Contest <em>Los trabajos y los días</em>. Child labor category, with the photo series (x4) Pequeños iku, grandes trabajos. (2018)</li>
+      <li>Final selection 28th Documentary Photography Contest <em>Los trabajos y los días</em>. Care economy category, with the photo series (x3) Buscar el equilibrio y establecer el acuerdo (2022)</li>
+      <li>Online Group Exhibition "Visual Audio" (winter 2019) in <a href="https://www.analogforevermagazine.com/online-exhibitions/visual-audio-june-2019" target="_blank">Analog Forever Magazine</a> curated by Michael Kirchoff with the photo <em>Iku shaman Bernardo Torres</em></li>
+    </ul>
+    <h3 style="margin-top:2em;">Multimedia</h3>
+    <ul>
+      <li>
+        <span style="font-style:italic;">Skampida - Vida triste y hermosa (music video)</span>
+        <div style="max-width: 480px;">
+          <iframe width="100%" height="270" src="https://www.youtube.com/embed/gbT85VlcLXY" title="Skampida - Vida triste y hermosa (music video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </li>
+      <li>
+        <span style="font-style:italic;">Mi perro muerto</span>
+        <div style="max-width: 480px;">
+          <iframe width="100%" height="270" src="https://www.youtube.com/embed/ht5MbnvsjBo" title="Fotopoestía Mi perro muerto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div id="media" class="tab-content">
+    <h3 style="margin-top:2em;">Interviews</h3>
+    <ul>
+      <li><a href="https://www.academia.edu/127064665/Sacredness_means_forbiddenness_Interview_with_Juan_Sebasti%C3%A1n_Zapata_Mujica" target="_blank"><em>Sacredness means forbiddenness</em></a> by  Jaroslava Šnajberková for Diário Digital de Bordo (2024)</li>
+      <li><a href="https://vistprojects.com/en/misses-in-the-sierra-nevada-de-santa-marta/" target="_blank"><em>Misses in the Sierra Nevada de Santa Marta</em></a> by Marcela Vallejo for Vist Projects (2021)</li>
+      <li><a href="https://www.eltiempo.com/cultura/cine-y-tv/quienes-eran-las-senoritas-misioneras-que-cambiaron-la-sierra-nevada-633773" target="_blank"><em>La historia desconocida de 'las señoritas', las misioneras que cambiaron la Sierra Nevada.</em></a> by Simón Granja for El Tiempo. (2021)</li>
+      <li><a href="https://www.elespectador.com/colombia-20/paz-y-memoria/una-memoria-subterranea-en-la-sierra-nevada/" target="_blank"><em>Una memoria subterránea en la Sierra Nevada</em></a> by Miguel Estupiñán for El Espectador. (2021)</li>
+      <li><a href="https://cartelurbano.com/historias/educacion-popular-en-bogota-asi-se-descentraliza-la-ensenanza-que-nos-niega-el-estado" target="_blank"><em>Educación popular en Bogotá: así se descentraliza la enseñanza que nos niega el Estado</em></a> by Carolina Romero for Cartel Urbano (2017)</li>
+    </ul>
+    <h3 style="margin-top:2em;">Opinion</h3>
+    <ul>
+      <li><a href="https://www.lacoladerata.co/opinion/analisis/bailando-sobre-la-tumba-de-la-antropologia-avestruciana/" target="_blank"><em>Bailando sobre la tumba de la antropología avestruciana</em></a> La Cola de Rata (2022)</li>
+      <li><a href="https://www.lacoladerata.co/cultura/preguntas-en-la-taiga/" target="_blank"><em>Preguntas en la taiga</em></a> La Cola de Rata (2022)</li>
+      <li><a href="https://www.lacoladerata.co/cultura/relatos/siete-canciones-para-ir-y-volver/" target="_blank"><em>Siete canciones para ir y volver a la Sierra Nevada</em></a> La Cola de Rata (2021)</li>
+      <li><a href="https://linotipia.com/visita-a-las-senoritas-imprescindibles/" target="_blank"><em>Visita a Las Señoritas imprescindibles</em></a> Linotipia (2021)</li>
+    </ul>
+  </div>
+</body>
+</html>
